@@ -8,8 +8,6 @@ def count_letters(text):
                 dict_letters[symbol] += 1
             else:
                 dict_letters[symbol] = 1
-            count_ = text_1.count(symbol)
-            dict_letters[symbol] = count_
     return dict_letters
 
 # TODO Напишите функцию calculate_frequency
@@ -58,3 +56,4 @@ main_str = """
 # TODO Распечатайте в столбик букву и её частоту в тексте
 for key, value in calculate_frequency(count_letters(main_str)).items():
     print(f"{key}: {value:.2f}")
+    
